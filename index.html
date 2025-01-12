@@ -18,12 +18,13 @@
                     <ul>
                         <li><a href="#about">About</a></li>
                         <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <!-- <li><a href="#contact">Contact</a></li> -->
                     </ul>
                 </nav>
 
                 <div class="header-buttons">
-                    <a href="https://github.com/Alvind0" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/Alvind0?tab=overview&from=2025-01-01&to=2025-01-11" aria-label="GitHub"
+                        target="_" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                     <a href="mailto:kino42514@proton.me" aria-label="メールください。"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
@@ -34,67 +35,75 @@
                 <div class="hero-content">
                     <div id="about" class="hero-about">
                         <h1 class="title">アキノ ヴィンセント</h1>
-                        <p>ITエンジニア</p>
                     </div>
-                    <div class="hero-buttons">
-                        <a href="https://github.com/Alvind0" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="mailto:kino42514@proton.me" aria-label="Eメールをください。"><i class="fas fa-envelope"></i></a>
+
+                    <div class="hero-sub">
+                        <p>ITエンジニア</p>
+
+                        <div class="hero-buttons">
+                            <button aria-label="GitHub"
+                                onclick="window.open('https://github.com/Alvind0?tab=overview&from=2025-01-01&to=2025-01-11', '_blank', 'noopener,noreferrer')">
+                                <i class="fab fa-github"></i>
+                            </button>
+                            <button aria-label="Eメールをください。" onclick="window.location.href='mailto:kino42514@proton.me'">
+                                <i class="fas fa-envelope"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="stack">
+                        <ul class="tech-list">
+                            <li>
+                                <svg class="tech-icon" width="25px" height="25px" aria-labelledby="html-title">
+                                    <title id="html-title">HTML</title>
+                                    <use href="images/icons.svg#html-icon"></use>
+
+                                    <p>HTML</p>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="tech-icon" width="25px" height="25px" aria-labelledby="css-title">
+                                    <title id="css-title">CSS</title>
+                                    <use href="images/icons.svg#css-icon"></use>
+                                    <p>CSS</p>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="tech-icon" width="25px" height="25px" aria-labelledby="css-title">
+                                    <title id="javascript-title">Javascript1</title>
+                                    <use href="images/icons.svg#javascript-icon"></use>
+                                    <p>Javascript</p>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="tech-icon" width="25px" height="25px" aria-labelledby="csharp-title">
+                                    <title id="csharp-title">C#</title>
+                                    <use href="images/icons.svg#csharp-icon"></use>
+                                    <p>C#</p>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="tech-icon" width="25px" height="25px" aria-labelledby="csharp-title">
+                                    <title id="sqlite-title">SQLite</title>
+                                    <use href="images/icons.svg#sqlite-icon"></use>
+                                    <p>SQLite</p>
+                                </svg>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
 
-            <section class="tech-stack">
-                <h2>テックスタック</h2>
-                <ul class="tech-list">
-                    <li>
-                        <svg class="tech-icon" width="50" height="50" aria-labelledby="html-title">
-                            <title id="html-title">HTML</title>
-                            <use href="images/icons.svg#html-icon"></use>
-                            <p>HTML</p>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg class="tech-icon" width="50" height="50" aria-labelledby="css-title">
-                            <title id="css-title">CSS</title>
-                            <use href="images/icons.svg#css-icon"></use>
-                            <p>CSS</p>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg class="tech-icon" width="50" height="50" aria-labelledby="css-title">
-                            <title id="javascript-title">Javascript1</title>
-                            <use href="images/icons.svg#javascript-icon"></use>
-                            <p>Javascript</p>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg class="tech-icon" width="50" height="50" aria-labelledby="csharp-title">
-                            <title id="csharp-title">C#</title>
-                            <use href="images/icons.svg#csharp-icon"></use>
-                            <p>C#</p>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg class="tech-icon" width="50" height="50" aria-labelledby="csharp-title">
-                            <title id="sqlite-title">SQLite</title>
-                            <use href="images/icons.svg#sqlite-icon"></use>
-                            <p>SQLite</p>
-                        </svg>
-                    </li>
-                </ul>
-            </section>
+            <div class="projects-wrapper">
+                <section id="projects" class="projects">
+                    <h2>制作物</h2>
 
-            <section class="portfolio">
-                <h2>制作物</h2>
-
-            </section>
+                </section>
+            </div>
         </main>
 
-        <div class="footer-wrapper">
-            <div class="footer">
-                <p>©2025</p>
-                <p>Vincent Aquino</p>
-            </div>
+        <div class="footer">
+            <p>©2025</p>
+            <p>Vincent Aquino</p>
         </div>
     </div>
 </body>
