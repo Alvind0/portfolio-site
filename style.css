@@ -1,13 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-html {
+html,
+body {
   font-family: "Roboto", "Noto Sans JP", serif;
   min-height: 100vh;
   margin: 0;
   padding: 0;
+  width: 100%;
   background-color: #fff;
   color: #454545;
   scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 ::-webkit-scrollbar {
@@ -50,7 +55,7 @@ button {
   position: fixed;
   bottom: 72px;
   right: 48px;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0);
   padding: 4px 6px;
   border-radius: 100%;
 }
@@ -60,17 +65,11 @@ button:hover {
   background-color: #9395d3;
 }
 
-.container {
+.header-content {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-header .header-content {
-  display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  box-shadow: 0 0 4px 0 #00000014, 0 2px 4px 0 #0000001f;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.15);
 }
 
 ul {
@@ -197,13 +196,14 @@ h2 {
 .footer {
   gap: 12px;
   display: flex;
-  background: #454545;
   color: #fff;
   justify-content: center;
+  background-color: #454545;
+  min-height: 45px;
 }
 
 @media (max-width: 768px) {
-  header .header-content {
+  .header-content {
     justify-content: space-between;
     padding-right: 32px;
   }

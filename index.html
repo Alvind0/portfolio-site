@@ -10,151 +10,149 @@
 </head>
 
 <body>
-    <div class="container">
-        <header id="top">
-            <div class="header-content">
-                <nav aria-label="ナビゲーション">
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                    </ul>
-                </nav>
+    <header id="top">
+        <div class="header-content">
+            <nav aria-label="ナビゲーション">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </nav>
 
-                <div class="header-buttons">
-                    <a href="https://github.com/Alvind0?tab=overview&from=2025-01-01&to=2025-01-11" aria-label="GitHub"
-                        target="_" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                    <a href="mailto:kino42514@proton.me" aria-label="メールください。"><i class="fas fa-envelope"></i></a>
+            <div class="header-buttons">
+                <a href="https://github.com/Alvind0?tab=overview&from=2025-01-01&to=2025-01-11" aria-label="GitHub"
+                    target="_" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                <a href="mailto:kino42514@proton.me" aria-label="メールください。"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div id="about" class="hero-about">
+                    <h1 class="title">アキノ ヴィンセント</h1>
+                </div>
+                <div class="hero-sub">
+                    <p>ITエンジニア</p>
+                    <div class="hero-buttons">
+                        <button aria-label="GitHub"
+                            onclick="window.open('https://github.com/Alvind0?tab=overview&from=2025-01-01&to=2025-01-11', '_blank', 'noopener,noreferrer')">
+                            <i class="fab fa-github"></i>
+                        </button>
+                        <button aria-label="Eメールをください。" onclick="window.location.href='mailto:kino42514@proton.me'">
+                            <i class="fas fa-envelope"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="stack">
+                    <ul class="tech-list">
+                        <li>
+                            <svg class="tech-icon" width="25px" height="25px" aria-labelledby="html-title">
+                                <title id="html-title">HTML</title>
+                                <use href="images/icons.svg#html-icon"></use>
+                                <p>HTML</p>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg class="tech-icon" width="25px" height="25px" aria-labelledby="css-title">
+                                <title id="css-title">CSS</title>
+                                <use href="images/icons.svg#css-icon"></use>
+                                <p>CSS</p>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg class="tech-icon" width="25px" height="25px" aria-labelledby="css-title">
+                                <title id="javascript-title">Javascript1</title>
+                                <use href="images/icons.svg#javascript-icon"></use>
+                                <p>Javascript</p>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg class="tech-icon" width="25px" height="25px" aria-labelledby="csharp-title">
+                                <title id="csharp-title">C#</title>
+                                <use href="images/icons.svg#csharp-icon"></use>
+                                <p>C#</p>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg class="tech-icon" width="25px" height="25px" aria-labelledby="csharp-title">
+                                <title id="sqlite-title">SQLite</title>
+                                <use href="images/icons.svg#sqlite-icon"></use>
+                                <p>SQLite</p>
+                            </svg>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </header>
+        </section>
 
-        <main>
-            <section class="hero">
-                <div class="hero-content">
-                    <div id="about" class="hero-about">
-                        <h1 class="title">アキノ ヴィンセント</h1>
-                    </div>
-                    <div class="hero-sub">
-                        <p>ITエンジニア</p>
-                        <div class="hero-buttons">
-                            <button aria-label="GitHub"
-                                onclick="window.open('https://github.com/Alvind0?tab=overview&from=2025-01-01&to=2025-01-11', '_blank', 'noopener,noreferrer')">
-                                <i class="fab fa-github"></i>
-                            </button>
-                            <button aria-label="Eメールをください。" onclick="window.location.href='mailto:kino42514@proton.me'">
-                                <i class="fas fa-envelope"></i>
-                            </button>
+        <section id="projects" class="projects">
+            <h2>制作物</h2>
+            <div class="project-list-container">
+                <div class="project-list">
+                    <div class="project">
+                        <div class="project-details">
+                            <img>
+                            <h3>アプリの名前</h3>
+                            <p>これはタイトルの下のテキストの例です。作成物の概要(作成日、機能説明)、使ったプログラミング言語やフレームワーク等の説明と、ライブプレビューとレポジトリのリンクが入ります。4行以内に収まるようにします。
+                            </p>
                         </div>
+                        <ul class="technology">
+                            <li>C#</li>
+                            <li>SQLite</li>
+                        </ul>
                     </div>
-                    <div class="stack">
-                        <ul class="tech-list">
-                            <li>
-                                <svg class="tech-icon" width="25px" height="25px" aria-labelledby="html-title">
-                                    <title id="html-title">HTML</title>
-                                    <use href="images/icons.svg#html-icon"></use>
-                                    <p>HTML</p>
-                                </svg>
-                            </li>
-                            <li>
-                                <svg class="tech-icon" width="25px" height="25px" aria-labelledby="css-title">
-                                    <title id="css-title">CSS</title>
-                                    <use href="images/icons.svg#css-icon"></use>
-                                    <p>CSS</p>
-                                </svg>
-                            </li>
-                            <li>
-                                <svg class="tech-icon" width="25px" height="25px" aria-labelledby="css-title">
-                                    <title id="javascript-title">Javascript1</title>
-                                    <use href="images/icons.svg#javascript-icon"></use>
-                                    <p>Javascript</p>
-                                </svg>
-                            </li>
-                            <li>
-                                <svg class="tech-icon" width="25px" height="25px" aria-labelledby="csharp-title">
-                                    <title id="csharp-title">C#</title>
-                                    <use href="images/icons.svg#csharp-icon"></use>
-                                    <p>C#</p>
-                                </svg>
-                            </li>
-                            <li>
-                                <svg class="tech-icon" width="25px" height="25px" aria-labelledby="csharp-title">
-                                    <title id="sqlite-title">SQLite</title>
-                                    <use href="images/icons.svg#sqlite-icon"></use>
-                                    <p>SQLite</p>
-                                </svg>
-                            </li>
+
+                    <div class="project">
+                        <div class="project-details">
+                            <img>
+                            <h3>アプリの名前</h3>
+                            <p>これはタイトルの下のテキストの例です。作成物の概要(作成日、機能説明)、使ったプログラミング言語やフレームワーク等の説明と、ライブプレビューとレポジトリのリンクが入ります。4行以内に収まるようにします。
+                            </p>
+                        </div>
+                        <ul class="technology">
+                            <li>C#</li>
+                            <li>SQLite</li>
+                        </ul>
+                    </div>
+
+                    <div class="project">
+                        <div class="project-details">
+                            <img>
+                            <h3>アプリの名前</h3>
+                            <p>これはタイトルの下のテキストの例です。作成物の概要(作成日、機能説明)、使ったプログラミング言語やフレームワーク等の説明と、ライブプレビューとレポジトリのリンクが入ります。4行以内に収まるようにします。
+                            </p>
+                        </div>
+                        <ul class="technology">
+                            <li>C#</li>
+                            <li>SQLite</li>
+                        </ul>
+                    </div>
+
+                    <div class="project">
+                        <div class="project-details">
+                            <img>
+                            <h3>アプリの名前</h3>
+                            <p>これはタイトルの下のテキストの例です。作成物の概要(作成日、機能説明)、使ったプログラミング言語やフレームワーク等の説明と、ライブプレビューとレポジトリのリンクが入ります。4行以内に収まるようにします。
+                            </p>
+                        </div>
+                        <ul class="technology">
+                            <li>C#</li>
+                            <li>SQLite</li>
                         </ul>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
+    </main>
 
-            <section id="projects" class="projects">
-                <h2>制作物</h2>
-                <div class="project-list-container">
-                    <div class="project-list">
-                        <div class="project">
-                            <div class="project-details">
-                                <img>
-                                <h3>アプリの名前</h3>
-                                <p>これはタイトルの下のテキストの例です。作成物の概要(作成日、機能説明)、使ったプログラミング言語やフレームワーク等の説明と、ライブプレビューとレポジトリのリンクが入ります。4行以内に収まるようにします。
-                                </p>
-                            </div>
-                            <ul class="technology">
-                                <li>C#</li>
-                                <li>SQLite</li>
-                            </ul>
-                        </div>
+    <a href="#top" class="go-to-top" aria-label="トップに戻る">
+        <i class="fa-solid fa-chevron-up"></i></a>
 
-                        <div class="project">
-                            <div class="project-details">
-                                <img>
-                                <h3>アプリの名前</h3>
-                                <p>これはタイトルの下のテキストの例です。作成物の概要(作成日、機能説明)、使ったプログラミング言語やフレームワーク等の説明と、ライブプレビューとレポジトリのリンクが入ります。4行以内に収まるようにします。
-                                </p>
-                            </div>
-                            <ul class="technology">
-                                <li>C#</li>
-                                <li>SQLite</li>
-                            </ul>
-                        </div>
-
-                        <div class="project">
-                            <div class="project-details">
-                                <img>
-                                <h3>アプリの名前</h3>
-                                <p>これはタイトルの下のテキストの例です。作成物の概要(作成日、機能説明)、使ったプログラミング言語やフレームワーク等の説明と、ライブプレビューとレポジトリのリンクが入ります。4行以内に収まるようにします。
-                                </p>
-                            </div>
-                            <ul class="technology">
-                                <li>C#</li>
-                                <li>SQLite</li>
-                            </ul>
-                        </div>
-
-                        <div class="project">
-                            <div class="project-details">
-                                <img>
-                                <h3>アプリの名前</h3>
-                                <p>これはタイトルの下のテキストの例です。作成物の概要(作成日、機能説明)、使ったプログラミング言語やフレームワーク等の説明と、ライブプレビューとレポジトリのリンクが入ります。4行以内に収まるようにします。
-                                </p>
-                            </div>
-                            <ul class="technology">
-                                <li>C#</li>
-                                <li>SQLite</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <a href="#top" class="go-to-top" aria-label="トップに戻る">
-            <i class="fa-solid fa-chevron-up"></i></a>
-
-        <div class="footer">
-            <p>©2025</p>
-            <p>Vincent Aquino</p>
-        </div>
+    <div class="footer">
+        <p>©2025</p>
+        <p>Vincent Aquino</p>
     </div>
 </body>
 
